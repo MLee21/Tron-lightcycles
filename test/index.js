@@ -1,8 +1,16 @@
 const chai = require('chai');
-const assert = chai.assert;
+const expect = chai.expect;
+const Canvas = require('../lib/light_cycles.js')
 
 describe('my test suite', function () {
   it('should work', function () {
-    assert(true);
+    expect(true);
   });
+});
+
+describe('Canvas object exists', function () {
+  it('exists', function () {
+    expect(new Canvas());
+  });
+
 });
